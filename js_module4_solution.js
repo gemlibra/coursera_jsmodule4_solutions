@@ -1,6 +1,7 @@
 
 //Github Repo url: gemlibra.github.io/js_module4_solutions
 
+
 (function() {
     var nameArray = [{
     name: 'John', 
@@ -13,16 +14,20 @@
     name: 'Clara',
     name: 'jaspin'
     }];
-    
 
+    const myResult = document.querySelector("#results");
+    
     for ( i = 0; i < nameArray.length;  i++) {
         
         var firstLetter = nameArray[i].charAt(0).toLowerCase();
 
         if (firstLetter = 'J' || 'j') {
-        console.log(`Hello  + ${nameArray.name}`);
+       var names = console.log(`Hello  + ${nameArray.name[i]}`);
+       myResult.innerHTML = names;
+    
         } else {
-        console.log(`Goodbye  + ${arrayName.name}`);
+        console.log(`Goodbye  + ${arrayName.name[i]}`);
+        myResult.innerHTML = names;
      };
   };
 })();
