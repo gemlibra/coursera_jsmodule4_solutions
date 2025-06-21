@@ -1,4 +1,5 @@
 
+//Github Repo url: gemlibra.github.io/js_module4_solutions
 
 (function() {
     var nameArray = [{
@@ -12,6 +13,7 @@
     name: 'Clara',
     name: 'jaspin'
     }];
+    
 
     for ( i = 0; i < nameArray.length;  i++) {
         
