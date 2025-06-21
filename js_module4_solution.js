@@ -21,7 +21,7 @@
         
         var firstLetter = nameArray[i].charAt(0).toLowerCase();
 
-        if (firstLetter = 'J' || 'j') {
+        if (firstLetter === 'J' || 'j') {
        var names = console.log(`Hello  + ${nameArray.name[i]}`);
        myResult.innerHTML = names;
     
