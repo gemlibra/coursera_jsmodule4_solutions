@@ -1,33 +1,28 @@
 
 //Github Repo url: gemlibra.github.io/js_module4_solutions
 
+(function () { //This module executes both JS Closure and IIFE (Immediatly invoked function expressions)
 
-(function() {
-    var nameArray = [{
-    name: 'John', 
-    name: 'James', 
-    name: 'Jennifer', 
-    name: 'Gift',
-    name: 'Xtian',
-    name: 'jasmine',
-    name: 'Zarah',
-    name: 'Clara',
-    name: 'jaspin'
-    }];
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-    const myResult = document.querySelector("#results");
+
+function helloSpeaker () {
+    var hellomsg = console.log( `Hello + ${names[i]}`);
+}
+
+function byeSpeaker () {
+    var byemsg = console.log( `Goodbye + ${names[i]}`);
+}
+
+for (var i = 0; i < names.length; i++) {
     
-    for ( i = 0; i < nameArray.length;  i++) {
-        
-        var firstLetter = nameArray[i].charAt(0).toLowerCase();
+    var firstLetter = names[i].charAt(0).toLowerCase();
+ 
+     if (firstLetter === 'J' || 'j') {
+        helloSpeaker.hellomsg;
+  } else {
+        byeSpeaker.byemsgmsg;
+  }
+}
 
-        if (firstLetter === 'J' || 'j') {
-       var names = console.log(`Hello  + ${nameArray.name[i]}`);
-       myResult.innerHTML = names;
-    
-        } else {
-        console.log(`Goodbye  + ${arrayName.name[i]}`);
-        myResult.innerHTML = names;
-     };
-  };
 })();
