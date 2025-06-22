@@ -1,6 +1,4 @@
 
-//Github Repo url: gemlibra.github.io/js_module4_solutions
-
 (function () { //This module executes both JS Closure and IIFE (Immediatly invoked function expressions)
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
