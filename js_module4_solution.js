@@ -1,26 +1,46 @@
 
+//Github Repo url: gemlibra.github.io/js_module4_solutions
+
+
+ var result = document.getElementById("output");
+
 (function () { //This module executes both JS Closure and IIFE (Immediatly invoked function expressions)
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
-
+  
 function helloSpeaker () {
-    var hellomsg = console.log( `Hello + ${names[i]}`);
-}
+  console.log(`Hello  ${names[i]}`);
+  result.innerHTML = ` Hello  ${names}`;
+};
 
 function byeSpeaker () {
-    var byemsg = console.log( `Goodbye + ${names[i]}`);
+  console.log(`Good bye  ${names[i]}`);
+  result.innerHTML = `Good bye  ${names[i]}`;
 }
-
-for (var i = 0; i < names.length; i++) {
+  
+  for ( var i = 0; i < names.length; i++) {
     
-    var firstLetter = names[i].charAt(0).toLowerCase();
- 
-     if (firstLetter === 'J' || 'j') {
-        helloSpeaker.hellomsg;
-  } else {
-        byeSpeaker.byemsgmsg;
-  }
-}
-
+    var firstLetter = names[i].charAt(0); //.toLowerCase();
+    
+     if (firstLetter !== 'J' ) {
+        helloSpeaker();
+    } else {
+        byeSpeaker();
+     };
+  };
+  
 })();
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
